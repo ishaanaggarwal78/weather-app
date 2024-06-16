@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.outer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.500) url('https://static.vecteezy.com/system/resources/previews/023/802/097/non_2x/blue-sky-with-white-clouds-background-cartoon-flat-style-design-illustration-vector.jpg');
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-position-y: -80px;
+}
+
+.main {
+    /* background: linear-gradient(45deg, rgb(13, 88, 105), rgb(27, 0, 102)); */
+    background: linear-gradient(45deg, rgb(13, 13, 105), rgb(40, 116, 132));
+    border-radius: 10px;
+    padding: 2rem;
+    width: 450px;
+    box-shadow: -13px 20px 40px 3px rgba(0, 0, 0, 0.741);
+    /* box-shadow: -10px 10px 10px 10px rgba(179, 0, 255, 0.585) ; */
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+}
+
+.search input {
+    border-radius: 20px;
+    height: 40px;
+    width: 85%;
+    border: none;
+    outline: none;
+    padding-left: 1rem;
+    font-size: 16px;
+    background-color: white;
+    font-weight: 600;
+    color: black;
+}
+
+.search img {
+    width: 10%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.search img:hover {
+    background-color: rgba(255, 255, 255, 0.822);
+    transition: all 0.2s;
+}
+
+
+.temperature {
+    text-align: center;
+    padding-top: 2rem;
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    /* padding-right: 2rem; */
+}
+
+.temp_img {
+    width: 25%;
+    margin-top: 0.5rem;
+}
+
+.temperature img {
+    width: 100%;
+    float: left;
+    margin-left: 2rem;
+}
+
+.city {
+    text-align: center;
+    color: white;
+    width: 70%;
+    text-align: right;
+    padding-top: 0.5rem;
+}
+
+.city h1 {
+    /* font-size: 1.8rem; */
+}
+
+/* ============================================= DATA ============================================= */
+
+.data {
+    margin-top: 2rem;
+}
+
+.weather_info {
+    background-color: rgba(255, 255, 255, 0.167);
+    padding: 1rem;
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 0.771);
+    margin-bottom: 1rem;
+}
+
+.weather_info h5 {
+    color: rgba(255, 255, 255, 0.525);
+    font-size: 17px;
+}
+
+.weather_info h4 {
+    font-size: 20px;
+}
+
+/* ============================================= RESPONSIVE ============================================= */
+
+@media (max-width:768px) {
+    .outer {
+        height: 94vh;
+    }
+
+    .main {
+        margin: 3rem;
+    }
+
+    .search {
+        width: 100%;
+    }
+
+    .search img {
+        width: 10%;
+        height: 2.4rem;
+    }
+
+    .city h1 {
+        font-size: 2.5rem;
+    }
+
+    .temp_img {
+        margin-top: 0.2rem;
+    }
+
+    .data .row .col-lg-6 {
+        width: 50%;
+    }
+
+    .weather_info h5 {
+        font-size: 1rem;
+    }
+
+    .weather_info h4 {
+        font-size: 1.2rem;
+    }
+}
+
+
+
+@media (max-width:425px) {
+    .search img {
+        width: 16%;
+        height: 2.4rem;
+    }
+
+    .temp_img img {
+        margin-left: 0px;
+        margin-top: 0.7rem;
+    }
+    .temp_img{
+        width: 30%;
+    }
+    .city{
+        padding-right: 10px;
+    }
+}
+
+
+
+@media (max-width:376px) {
+    .main {
+        padding: 1.5rem;
+    }
+
+    .search img {
+        width: 18%;
+        height: 2.4rem;
+    }
+
+    .temp_img img {
+        margin-left: 10px;
+    }
+
+    .weather_info h5 {
+        font-size: 15px;
+    }
+
+    .weather_info h4 {
+        font-size: 17px;
+    }
+}
